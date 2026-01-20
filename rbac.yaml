@@ -51,7 +51,7 @@ kind: ClusterRole
 metadata:
   name: expense
 rules:
-- apiGroups: [""]
+- apiGroups: [""] # core API group
   resources: ["nodes","persistentvolumes","namespaces"]
   verbs: ["get","list","watch"]
 ---
