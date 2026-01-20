@@ -4,7 +4,6 @@ data:
     - groups:
       - system:bootstrappers
       - system:nodes
-      # we have to replace with our's
       rolearn: arn:aws:iam::315069654700:role/eksctl-expense-nodegroup-expense-NodeInstanceRole-s5iLLwbCscFS 
       username: system:node:{{EC2PrivateDNSName}}
   mapUsers: |
@@ -14,7 +13,7 @@ data:
       username: suresh
     - groups:
       - expense-admin
-      userarn: arn:aws:iam::315069654700:user/ramesh
+      userarn: arn:aws:iam::267921311755:user/ramesh
       username: ramesh
 kind: ConfigMap
 metadata:
